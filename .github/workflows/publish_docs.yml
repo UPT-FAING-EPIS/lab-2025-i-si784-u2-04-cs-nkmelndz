@@ -18,7 +18,7 @@ jobs:
     - name: Generar metadata
       run: docfx metadata EcommerceApp/docfx.json
 
-    - name: Build Doc Site
+    - name: Build DocSite
       run: docfx build EcommerceApp/docfx.json
 
     - name: Subir GitHub Pages
