@@ -5,9 +5,7 @@
       "src": [
         {
           "src": ".",
-          "files": [
-            "**/*.csproj"
-          ]
+          "files": ["**/*.csproj"]
         }
       ],
       "dest": "docs"
@@ -16,25 +14,20 @@
   "build": {
     "content": [
       {
-        "files": [ "index.md" ]
+        "files": ["index.md"]
       },
       {
-        "files": [ "**/*.{md,yml}" ],
-        "exclude": [ "_site/**" ]
+        "files": ["**/*.{md,yml}"],
+        "exclude": ["_site/**"]
       }
     ],
     "resource": [
       {
-        "files": [
-          "images/**"
-        ]
+        "files": ["images/**"]
       }
     ],
     "output": "_site",
-    "template": [
-      "default",
-      "modern"
-    ],
+    "template": ["default", "modern"],
     "globalMetadata": {
       "_appName": "EcommerceApp.Api",
       "_appTitle": "EcommerceApp.Api",
