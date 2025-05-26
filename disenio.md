@@ -19,6 +19,12 @@ classDiagram
         +string Name
         +DateTime ValidTo
     }
+    class ICartItem {
+        <<interface>>
+        +string ProductId 
+        +int Quantity 
+        +double Price
+    }
 
     %% Controlador
     class CartController {
