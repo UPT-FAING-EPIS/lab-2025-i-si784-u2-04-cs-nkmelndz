@@ -1,7 +1,9 @@
 <Project Sdk="Microsoft.NET.Sdk.Web">
 
-
   <PropertyGroup>
+    <TargetFramework>net8.0</TargetFramework>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
     <PackageId>EcommerceApp.nkmelndz</PackageId>
     <TargetFramework>net8.0</TargetFramework>
     <Version>20.2207.3262</Version>
@@ -15,7 +17,6 @@
     <RepositoryType>git</RepositoryType>
     <PackageProjectUrl>https://github.com/UPT-FAING-EPIS/lab-2025-i-si784-u2-04-cs-nkmelndz</PackageProjectUrl>
   </PropertyGroup>
-
 
   <ItemGroup>
     <PackageReference Include="Microsoft.AspNetCore.OpenApi" Version="8.0.7" />
