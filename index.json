@@ -63,5 +63,20 @@
     "href": "docs/EcommerceApp.Tests.html",
     "title": "Namespace EcommerceApp.Tests | EcommerceApp.Api",
     "summary": "Namespace EcommerceApp.Tests Classes ControllerTests"
+  },
+  "docs/getting-started.html": {
+    "href": "docs/getting-started.html",
+    "title": "Getting Started | EcommerceApp.Api",
+    "summary": "Getting Started"
+  },
+  "docs/introduction.html": {
+    "href": "docs/introduction.html",
+    "title": "Introduction | EcommerceApp.Api",
+    "summary": "Introduction"
+  },
+  "index.html": {
+    "href": "index.html",
+    "title": "Bienvenido a la documentación de EcommerceApp | EcommerceApp.Api",
+    "summary": "Bienvenido a la documentación de EcommerceApp Este sitio contiene la documentación técnica de la API EcommerceApp.Api. Secciones principales Controladores EcommerceApp.Api.Controllers Modelos EcommerceApp.Api.Models Servicios EcommerceApp.Api.Services Tests EcommerceApp.Tests Esta documentación ha sido generada automáticamente con DocFX."
   }
 }
