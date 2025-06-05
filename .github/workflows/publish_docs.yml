@@ -1,4 +1,4 @@
-name: Actividad03 - Publicar Documentacion
+name: Publicar Documentacion
 
 on: push
 jobs:

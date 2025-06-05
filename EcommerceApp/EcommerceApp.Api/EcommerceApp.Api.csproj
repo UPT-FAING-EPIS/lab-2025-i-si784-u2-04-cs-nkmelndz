@@ -6,7 +6,7 @@
     <ImplicitUsings>enable</ImplicitUsings>
     <PackageId>EcommerceApp.nkmelndz</PackageId>
     <TargetFramework>net8.0</TargetFramework>
-    <Version>20.2207.3262</Version>
+    <Version>20.2207.4262</Version>
     <Authors>nkmelndz</Authors>
     <GenerateDocumentationFile>true</GenerateDocumentationFile>
     <NoWarn>1591</NoWarn>

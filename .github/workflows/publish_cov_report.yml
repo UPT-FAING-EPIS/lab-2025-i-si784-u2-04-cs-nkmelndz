@@ -1,4 +1,4 @@
-name: Actividad04 - Publicar reporte
+name: Publicar Reporte Cobertura
 
 on:
   push:
