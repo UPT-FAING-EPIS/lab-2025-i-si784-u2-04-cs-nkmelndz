@@ -22,7 +22,7 @@
       "Uid": null,
       "IsMRef": true,
       "Title": "EcommerceApp.Api.Controllers.CartController",
-      "Summary": "<p sourcefile=\"docs/EcommerceApp.Api.Controllers.CartController.yml\" sourcestartlinenumber=\"1\">Controlador que gestiona las operaciones del carrito de compras.</p>\n"
+      "Summary": null
     },
     {
       "type": "ManagedReference",
@@ -50,7 +50,7 @@
       "Uid": null,
       "IsMRef": true,
       "Title": "EcommerceApp.Api.Models.IAddressInfo",
-      "Summary": "<p sourcefile=\"docs/EcommerceApp.Api.Models.IAddressInfo.yml\" sourcestartlinenumber=\"1\">Representa la información de dirección del cliente.</p>\n"
+      "Summary": null
     },
     {
       "type": "ManagedReference",
@@ -64,7 +64,7 @@
       "Uid": null,
       "IsMRef": true,
       "Title": "EcommerceApp.Api.Models.ICard",
-      "Summary": "<p sourcefile=\"docs/EcommerceApp.Api.Models.ICard.yml\" sourcestartlinenumber=\"1\">Representa los datos de una tarjeta de crédito o débito.</p>\n"
+      "Summary": null
     },
     {
       "type": "ManagedReference",
@@ -78,7 +78,7 @@
       "Uid": null,
       "IsMRef": true,
       "Title": "EcommerceApp.Api.Models.ICartItem",
-      "Summary": "<p sourcefile=\"docs/EcommerceApp.Api.Models.ICartItem.yml\" sourcestartlinenumber=\"1\">Representa un artículo en el carrito de compras.</p>\n"
+      "Summary": null
     },
     {
       "type": "ManagedReference",
@@ -106,7 +106,7 @@
       "Uid": null,
       "IsMRef": true,
       "Title": "EcommerceApp.Api.Services.ICartService",
-      "Summary": "<p sourcefile=\"docs/EcommerceApp.Api.Services.ICartService.yml\" sourcestartlinenumber=\"1\">Servicio que gestiona el carrito de compras del usuario.</p>\n"
+      "Summary": null
     },
     {
       "type": "ManagedReference",
@@ -120,7 +120,7 @@
       "Uid": null,
       "IsMRef": true,
       "Title": "EcommerceApp.Api.Services.IDiscountService",
-      "Summary": "<p sourcefile=\"docs/EcommerceApp.Api.Services.IDiscountService.yml\" sourcestartlinenumber=\"1\">Servicio encargado de aplicar descuentos a los totales del carrito.</p>\n"
+      "Summary": null
     },
     {
       "type": "ManagedReference",
@@ -134,7 +134,7 @@
       "Uid": null,
       "IsMRef": true,
       "Title": "EcommerceApp.Api.Services.IPaymentService",
-      "Summary": "<p sourcefile=\"docs/EcommerceApp.Api.Services.IPaymentService.yml\" sourcestartlinenumber=\"1\">Servicio que procesa el pago de una compra.</p>\n"
+      "Summary": null
     },
     {
       "type": "ManagedReference",
@@ -148,7 +148,7 @@
       "Uid": null,
       "IsMRef": true,
       "Title": "EcommerceApp.Api.Services.IShipmentService",
-      "Summary": "<p sourcefile=\"docs/EcommerceApp.Api.Services.IShipmentService.yml\" sourcestartlinenumber=\"1\">Servicio encargado del envío de productos al cliente.</p>\n"
+      "Summary": null
     },
     {
       "type": "ManagedReference",
