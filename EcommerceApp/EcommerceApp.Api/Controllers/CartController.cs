@@ -2,45 +2,61 @@ using EcommerceApp.Api.Models;
 using EcommerceApp.Api.Services;
 using Microsoft.AspNetCore.Mvc;
 
-namespace EcommerceApp.Api.Controllers;
-
-[ApiController]
-[Route("[controller]")]
-public class CartController : ControllerBase
+namespace EcommerceApp.Api.Controllers
 {
-    private readonly ICartService _cartService;
-    private readonly IPaymentService _paymentService;
-    private readonly IShipmentService _shipmentService;
-    private readonly IDiscountService _discountService;
-
-    public CartController(
-      ICartService cartService,
-      IPaymentService paymentService,
-      IShipmentService shipmentService,
-      IDiscountService discountService
-    )
+    /// <summary>
+    /// Controlador que gestiona las operaciones del carrito de compras.
+    /// </summary>
+    [ApiController]
+    [Route("[controller]")]
+    public class CartController : ControllerBase
     {
-        _cartService = cartService;
-        _paymentService = paymentService;
-        _shipmentService = shipmentService;
-        _discountService = discountService;
-    }
+        private readonly ICartService _cartService;
+        private readonly IPaymentService _paymentService;
+        private readonly IShipmentService _shipmentService;
+        private readonly IDiscountService _discountService;
 
-    [HttpPost]
-    public string CheckOut(ICard card, IAddressInfo addressInfo)
-    {
-        double total = _cartService.Total();
-        double discountedTotal = _discountService.ApplyDiscount(total);
-
-        var result = _paymentService.Charge(discountedTotal, card);
-        if (result)
+        /// <summary>
+        /// Inicializa una nueva instancia del <see cref="CartController"/>.
+        /// </summary>
+        /// <param name="cartService">Servicio del carrito de compras.</param>
+        /// <param name="paymentService">Servicio de pagos.</param>
+        /// <param name="shipmentService">Servicio de envíos.</param>
+        /// <param name="discountService">Servicio de descuentos.</param>
+        public CartController(
+            ICartService cartService,
+            IPaymentService paymentService,
+            IShipmentService shipmentService,
+            IDiscountService discountService)
         {
-            _shipmentService.Ship(addressInfo, _cartService.Items());
-            return "charged";
+            _cartService = cartService;
+            _paymentService = paymentService;
+            _shipmentService = shipmentService;
+            _discountService = discountService;
         }
-        else
+
+        /// <summary>
+        /// Procesa el checkout del carrito aplicando el pago y el envío.
+        /// </summary>
+        /// <param name="card">Información de la tarjeta de pago.</param>
+        /// <param name="addressInfo">Información de envío.</param>
+        /// <returns>Mensaje indicando si el cargo fue exitoso.</returns>
+        [HttpPost]
+        public string CheckOut(ICard card, IAddressInfo addressInfo)
         {
-            return "not charged";
+            double total = _cartService.Total();
+            double discountedTotal = _discountService.ApplyDiscount(total);
+
+            var result = _paymentService.Charge(discountedTotal, card);
+            if (result)
+            {
+                _shipmentService.Ship(addressInfo, _cartService.Items());
+                return "charged";
+            }
+            else
+            {
+                return "not charged";
+            }
         }
     }
 }
